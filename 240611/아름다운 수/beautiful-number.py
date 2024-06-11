@@ -33,3 +33,4 @@ def select(cur_num):
 if __name__=="__main__":
     n = int(input())
     select(0)
+    print(total)
