@@ -1,5 +1,6 @@
 n, k = 0, 4
 answer = []
+total = 0
 
 def print_list():
     for item in answer:
@@ -19,10 +20,10 @@ def is_beautiful_number():
     return True
 
 def select(cur_num):
-    global n
+    global n, total
     if cur_num == n:
         if is_beautiful_number():
-            print_list()
+            total += 1
         return
     for i in range(1, k+1):
         answer.append(i)
