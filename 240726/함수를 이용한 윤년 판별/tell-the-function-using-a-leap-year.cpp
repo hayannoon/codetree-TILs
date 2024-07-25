@@ -16,5 +16,9 @@ bool isYoonNyeon(int year) {
 int main() {
     int year;
     cin >> year;
-    cout << isYoonNyeon(year) << endl;
+    if (isYoonNyeon(year)) {
+        cout << "true" << endl;
+    } else {
+        cout << "false" << endl;
+    }
 }
