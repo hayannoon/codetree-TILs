@@ -4,7 +4,7 @@ bool isMaginNumber(int n) {
     if(n%2 == 0) {
         int first = n%10;
         int second = n/10;
-        if (first+second == 10) return true;
+        if ((first+second)%5 ==0 ) return true;
     }
     return false;
 }
